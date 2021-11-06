@@ -47,7 +47,7 @@ body {
 }
 
 .explore1::before {
-  background-image: url(https://pbs.twimg.com/profile_images/1390311162806521862/3clMrnDL_400x400.png);
+  background-image: url(../images/alex.png);
 }
 
 .explore2::before {
@@ -55,19 +55,19 @@ body {
 }
 
 .explore3::before {
-  background-image: url(https://pbs.twimg.com/profile_images/1389270948277329931/PhBzwPzc_400x400.png);
+  background-image: url(../images/leanne.png);
 }
 
 .explore4::before {
-  background-image: url(https://pbs.twimg.com/profile_images/1340988467417927682/ifHWLY9C_400x400.png);
+  background-image: url(../images/ania.png);
 }
 
 .explore5::before {
-  background-image: url(https://pbs.twimg.com/profile_images/1441440444429357056/63gb2BFR_400x400.jpg);
+  background-image: url(../images/kevin.jpg);
 }
 
 .explore6::before {
-  background-image: url(https://pbs.twimg.com/profile_images/1159535297660510208/lqcSosps_400x400.jpg);
+  background-image: url(../images/bob.jpg);
 }
 
 .explore:hover,
