@@ -1,0 +1,90 @@
+:root {
+  --text-dark: 200 30% 3%;
+  --bg-white: 255 , 255 , 255;
+  
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(230 35% 7%);
+  background-image: url('../images/darkness.png');
+}
+
+.explore {
+  content: "";
+  position: relative;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color:hsl(var(--text-dark));
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-transform: uppercase; 
+  transition: .5s transform linear;
+  margin: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.explore::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(var(--bg-white),.20);
+  transition: .5s transform linear, .5s opacity ease-in-out;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+}
+
+.explore1::before {
+  background-image: url(https://pbs.twimg.com/profile_images/1390311162806521862/3clMrnDL_400x400.png);
+}
+
+.explore2::before {
+  background-image: url(../images/michael.jpg);
+}
+
+.explore3::before {
+  background-image: url(https://pbs.twimg.com/profile_images/1389270948277329931/PhBzwPzc_400x400.png);
+}
+
+.explore4::before {
+  background-image: url(https://pbs.twimg.com/profile_images/1340988467417927682/ifHWLY9C_400x400.png);
+}
+
+.explore5::before {
+  background-image: url(https://pbs.twimg.com/profile_images/1441440444429357056/63gb2BFR_400x400.jpg);
+}
+
+.explore6::before {
+  background-image: url(https://pbs.twimg.com/profile_images/1159535297660510208/lqcSosps_400x400.jpg);
+}
+
+.explore:hover,
+.explore:focus {
+  transform: scale(.8);
+}
+
+.explore:hover::before,
+.explore:focus::before{
+  transform: scale(1.5);
+  opacity: 1;
+  box-shadow:
+    inset 0 0 50px rgb(211, 159, 211),    
+    0 0 50px rgb(233, 227, 173),          
+    -10px 0 80px rgb(208, 48, 173),       
+    10px 0 80px rgb(42, 228, 228);    
+  }
+
+  
+
